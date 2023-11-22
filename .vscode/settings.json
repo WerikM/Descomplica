@@ -1,0 +1,5 @@
+{
+    "python.analysis.extraPaths": [
+        "./extensions/ms-python.vscode-pylance-2023.3.40/dist/bundled/stubs/django-stubs/test"
+    ]
+}

@@ -1,0 +1,9 @@
+<p>Essa é a primeira pagina de clientes</p>
+
+<div>
+
+    <h1>Você é um cliente premium tem acesso a informações diferenciadas</h1>
+    <ul *ngFor="let client of clients">
+        <li> <a [routerLink]="['/client/detalhe', client.id]">{{client.nome}}</a></li>
+    </ul>
+</div>

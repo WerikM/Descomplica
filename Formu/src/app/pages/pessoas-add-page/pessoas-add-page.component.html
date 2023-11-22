@@ -1,0 +1,63 @@
+<form [formGroup]="formGroup" (ngSubmit)="salvar()">
+    <input type="hidden" formControlName="id"  />
+    <div>
+        <mat-form-field>
+            <mat-label>Nome</mat-label>
+            <input matInput type="text" placeholder="Nome" name="nome" formControlName="nome"  />
+            
+        </mat-form-field>
+        
+    </div>
+    
+    <div>
+        <mat-form-field>
+            <mat-label>Email</mat-label>
+            <input matInput type="text" placeholder="Email" name="email" formControlName="email"/>
+            <div>
+            <p class="error" *ngIf="isError('email', 'required')">Email é obrigatorio</p>
+            <p class="error" *ngIf="isError('email', 'email')">Email não é valido</p>
+            </div>
+        </mat-form-field >
+        <mat-form-field style="padding: 10px;">
+            <mat-label>Start date</mat-label>
+            <input matInput type="date" placeholder="Start date" name="startAt" formControlName="startAt"  />
+            
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>End date</mat-label>
+            <input matInput type="date" placeholder="End date" name="endAt" formControlName="endAt"  />
+            
+        </mat-form-field>
+        
+        
+    </div>
+
+    <div>
+        <mat-form-field>
+            <mat-label>CPF</mat-label>
+            <input matInput type="text" placeholder="CPF" name="cpf" formControlName="cpf" mask="000.000.000-00"  />
+            
+        </mat-form-field> 
+
+        <mat-form-field style="padding: 10px;">
+            <mat-label>CNPJ</mat-label>
+            <input matInput type="text" placeholder="CNPJ" name="cnpj" formControlName="cnpj"  mask="00.000.000/0000-00"/>
+            
+        </mat-form-field>
+        
+    </div>
+    
+    
+    <div>
+        <mat-form-field>
+            <mat-label>Hobie</mat-label>
+            <mat-select name="hoble" formControlName="hoble">
+                <mat-option *ngFor="let hoble of hobles" [value]="hoble">{{hoble}}</mat-option>
+            </mat-select>
+        </mat-form-field>
+    </div>
+    <div>
+        <button type="submit" mat-button color="primary">Salvar</button>
+    </div>
+
+</form>

@@ -1,0 +1,29 @@
+<h1>Aplicação</h1>
+<app-header></app-header><br>
+<a [routerLink]="['pai']">Ir para componente pai</a> <br>
+<a [routerLink]="['RXJS']">Ir para componente RXJS</a> <br>
+<a [routerLink]="['listaPessoas']">Ir para Lista pessoas</a> <br>
+<a [routerLink]="['listaUsuarios']">Ir para usuarios</a> <br>
+
+<router-outlet></router-outlet>
+<!--
+<div *ngIf="clientePremium; else naopremium">
+    voce e um cliente premium e tem acesso a informaçoes diferenciadas
+</div>
+
+<ng-template #naopremium>
+    não é cliente premium
+</ng-template>
+<ul *ngFor="let valor of valores">
+    <li>{{valor.id}} - {{valor.nome}} - {{valor. descricao}}</li>
+</ul>
+
+<app-binding></app-binding>
+
+<h1>exemplo de pipe</h1>
+
+<p>Data:  {{umadata | date: "short"}}</p>
+<p>currency:  {{umDinheiro | currency:"BRL"}}</p>
+<p>Customizado uppercase: {{nome | appUppercase}}</p>>
+
+<button (click)="sayHello()">Diga ola pelo serviço</button>-->

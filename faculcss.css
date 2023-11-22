@@ -1,0 +1,14 @@
+h1 {
+    font-size: 16px;
+    color: blue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.paragrafo1 {
+    color: red;
+    font-size: 12px;
+}
+.paragrafo2 {
+    background-color: brown;
+    font-size: 12px;
+}
